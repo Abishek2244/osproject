@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Priority Event Registration</title>
+    </head>
+<body>
+
+<div id="landing">
+    <h2>Event Registration</h2>
+    <label>Name: <input type="text" id="name" autocomplete="name" /></label>
+    <label>Registration Number: <input type="text" id="regNumber" autocomplete="registration-number" /></label>
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="dashboard" style="display: none;">
+    <h2 id="greeting"></h2>
+    <div id="events">
+        <h3>Events Dashboard</h3>
+        <div id="eventList"></div>
+    </div>
+    <div id="priorityLog">
+        <h4>Live Priority Log</h4>
+        <div id="log"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
