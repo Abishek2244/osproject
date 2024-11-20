@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://img.freepik.com/free-photo/flat-lay-clean-office-desk_23-2148219267.jpg?t=st=1729851849~exp=1729855449~hmac=3e7646135b8131649cb414e9e21a28604ce5ffd706c0572accd0bef99851cb2b&w=996') ; 
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #00050c;
+}
+
+
+/* Container for the form and dashboard */
+#landing, #dashboard {
+    background-color: #98cfa6;
+    border-radius: 10px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 550px;
+    margin-left: 250px; 
+    transition: all 0.3s ease;
+}
+
+#landing:hover, #dashboard:hover {
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2, h3, h4 {
+    color: #00050c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #00050c;
+}
+
+h3, h4 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+/* Input and Label Styling */
+label {
+    display: block;
+    margin: 20px 0 5px;
+    font-weight: bold;
+    font-size: 0.95em;
+    color:#00050c;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #0072ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0072ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-1px);
+}
+
+button:active {
+    background-color: #004a93;
+    transform: translateY(1px);
+}
+
+#events, #priorityLog {
+    margin-top: 25px;
+}
+
+#eventList .event {
+    background-color: #f7f9fc;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#eventList .event:hover {
+    background-color: #eef3f9;
+}
+
+.status {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.status.confirmed {
+    background-color: #16991a;
+    color: white;
+}
+
+.status.pending {
+    background-color: #ff9800;
+    color: white;
+}
+
+button.registerButton {
+    padding: 8px 15px;
+    background-color: #0072ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+button.registerButton:hover {
+    background-color: #005bb5;
+}
+
+#priorityLog {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #0072ff;
+    border-radius: 8px;
+    border: 1px solid #00050c;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#log div {
+    padding: 8px 0;
+    color: #00050c;
+    font-size: 0.9em;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+#log div:last-child {
+    border-bottom: none;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    #landing, #dashboard {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
